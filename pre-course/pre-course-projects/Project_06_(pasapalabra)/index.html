@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+	<div class="main">
+
+		<h2 id="project-title">PRE-COURSE PROJECT</h2>
+		
+		<div id="parentdiv">
+			
+			<h1 id="title">Pasapalabra</h1>
+
+			<div class="circles">
+
+				<div class="circle a hello"><p>A</p></div>
+			    <div class="circle b hello"><p>B</p></div>
+			    <div class="circle c hello"><p>C</p></div>
+			    <div class="circle d hello"><p>D</p></div>
+			    <div class="circle e hello"><p>E</p></div>
+			    <div class="circle f hello"><p>F</p></div>			
+				<div class="circle g hello"><p>G</p></div>
+			    <div class="circle h hello"><p>H</p></div>
+			    <div class="circle i hello"><p>I</p></div>
+			    <div class="circle j hello"><p>J</p></div>
+			    <div class="circle k hello"><p>K</p></div>
+			    <div class="circle l hello"><p>L</p></div>			
+				<div class="circle m hello"><p>M</p></div>
+			    <div class="circle n hello"><p>N</p></div>
+			    <div class="circle ñ hello"><p>Ñ</p></div>
+			    <div class="circle o hello"><p>O</p></div>
+			    <div class="circle p hello"><p>P</p></div>
+			    <div class="circle q hello"><p>Q</p></div>
+			    <div class="circle r hello"><p>R</p></div>			
+				<div class="circle s hello"><p>S</p></div>
+			    <div class="circle t hello"><p>T</p></div>
+			    <div class="circle u hello"><p>U</p></div>
+			    <div class="circle v hello"><p>V</p></div>
+			    <div class="circle w hello"><p>W</p></div>
+			    <div class="circle x hello"><p>X</p></div>			
+				<div class="circle y hello"><p>Y</p></div>
+			    <div class="circle z hello"><p>Z</p></div>		
+			</div>
+		</div>	
+
+		<div class="content-box">
+			<input type="text" id="answer-input" onkeyup="enter()">
+			<span id="enter-answer" type="button" value="Enter answer!" onclick="boton2()">Enter answer</span>
+			<br><br>
+			<span id="start-game" type="button" onclick="startGame()">START GAME</span>
+			<span id="refresh-game" type="button" onclick="window.location.reload()">Refresh</span>
+
+			<p id="questionbox">Welcome to Skylab's PASAPALABRA Project!<br><br> 			Let's review GAME INSTRUCTIONS:<br><br>
+			<span id="inner-question-box">
+				There are 27 questions. Each question matches with one letter of the spanish alphabet. The general purpose of the game is to guess which word contains or begins with that letter. You can introduce the word pressing 'Enter answer' button. In case you are dubious about the right answer, type <strong>'PASAPALABRA'</strong> (which stands for 'next word' in spanish) and leave the word-guess for the next circle round.<br><br>Finally, press 'Refresh' button to restart the game once you've completed it.
+			</span></p>
+
+			<p id="stats-box">STATS:</br><span id="stats"></span></p>	
+
+		</div>
+			
+	</div>
+			
+	
+	
+	<script src="app/app.js"></script>
+
+</body>
+</html>
+
+
+

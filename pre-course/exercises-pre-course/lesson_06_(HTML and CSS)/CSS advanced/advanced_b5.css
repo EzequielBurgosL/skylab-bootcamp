@@ -1,0 +1,207 @@
+body{
+	width: 1050px;
+	height:1000px;
+	font-family: Arial;
+	margin:auto;
+}
+
+.header{
+	height: 40px;
+	background-color: #307FBE;
+	font-weight: bold;
+
+}
+
+.header p{
+	width:150px;
+	margin-right: 20px;
+	font-size: 22px;
+	letter-spacing: 1.5px;
+}
+
+.header .span1{
+	color:#9C9C9C;
+}
+
+.header .span2{
+	color:#FA6800;
+}
+
+
+.header li{
+	position:relative;
+	bottom: 15px;
+	display: inline-block;
+	color: white;
+	padding-left: 5px;
+}
+
+.nav-list{
+	margin:5px;
+	padding-bottom: 10px;
+
+}
+
+#foro{
+	font-size: 14px;
+	color: #9C9C9C;
+	margin-right: 100px
+}
+
+.header input{
+	position: relative;
+	bottom: 18px;
+	width: 200px;
+	height: 20px;
+	padding-left: 10px;
+}
+
+
+.header button{
+	position:relative;
+	width: 80px;
+	height: 25px;
+	margin-left: 10px;
+	bottom:12px;
+	background-color: #5F5F5F;
+}
+
+.header img{
+	max-width: 80px;
+	max-height: 20px;
+}
+
+.body{
+	margin-left: 25px;
+}
+
+.top-part{
+	/*background-color: red;*/
+	width: 1000px;
+	height: 350px;
+	text-align: center;
+	margin-top: 30px;
+
+}
+
+.heading-top{
+	height: 25px;
+	background-color: #5987B8;
+	color: white;
+}
+.heading-top p{
+	padding-top: 5px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.imageBox img {
+	width: 235px; 
+	height: 115px;
+}
+
+.imageBox {
+	display: inline-block; 
+	/*border: 1px solid grey;*/ 
+	/*background: silver;*/ 
+	/*padding: 4px; */
+	text-align: center; 
+	font-size: 12px;
+	margin: 10px 5px;
+	color: #4E4E4E;
+	box-shadow: 5px 5px 8px #888888;
+}
+
+.imageBox:hover{
+	box-shadow: 5px 5px 8px #888888;
+}
+
+.imageBox:active{
+	position: relative;
+	left: 5px;
+	top: 5px;
+    box-shadow: 0px 0px 10px gold;
+
+}
+
+.central-part{
+	width: 1000px;
+	display: table-row;
+}
+
+.left-part{
+
+	width: 650px;
+	height: 300px;
+	display: table-cell;
+}
+
+.heading-left{
+	height: 20px;
+	width: 600px;
+	background-color: #5987B8;
+}
+
+.heading-left p{
+	text-align: center; 
+	color: white;
+	font-weight: bold;
+	padding-top: 3px;
+	margin-bottom: 3px;
+}
+
+.squares img{
+	width: 80px;
+	height: 60px;
+	margin-top: 5px;
+	display: block;
+	float: left;
+}
+
+.squares p{
+	margin-left: 150px;
+	margin-top: 0px;
+}
+
+.right-part{
+	width: 350px;
+	height: 300px;	
+	display: table-cell;
+}
+
+.heading-right{
+	height: 20px;
+	background-color: #5987B8;
+}
+
+.heading-right p{
+	text-align: center; 
+	color: white;
+	font-weight: bold;
+	padding-top: 3px;
+}
+
+.squares-right img{
+	width: 80px;
+	height: 60px;
+	margin-top: 5px;
+	display: block;
+	float: left;
+}
+
+.squares-right p{
+	margin-left: 95px;
+	margin-top: 0px;
+
+}
+
+.central-part span{
+	color: #5987B8;
+	font-weight: bold;
+}
+
+.central-part p{
+	font-size: 13px;
+}
+
+

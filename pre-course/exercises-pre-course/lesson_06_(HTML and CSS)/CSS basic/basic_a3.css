@@ -1,0 +1,38 @@
+body{
+	border: 1px solid black;
+	width: 730px;
+	height: 850px;
+	padding: 10px;
+
+
+}
+
+
+.image{
+	float:left;
+	margin-right: 20px;
+
+}
+
+p{
+	font-size: 20px;
+}
+
+span{
+	line-height: 2em;
+	font-size: 30px;
+	font-weight:bold;
+	font-family: sans-serif;
+}
+
+div:hover{
+	background-color: #DCDCDC;
+	height: 180px;
+}
+
+div{
+	padding: 10px;
+	padding-bottom: 20px;
+	padding-top:5px;
+
+}

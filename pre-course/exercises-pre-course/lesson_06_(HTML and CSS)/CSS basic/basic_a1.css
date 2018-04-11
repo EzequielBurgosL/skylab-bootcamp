@@ -1,0 +1,61 @@
+
+/*
+https://html-color-codes.info/colors-from-image/
+https://www.whatfontis.com/?s3
+*/
+
+.theBackground{
+	background-color: #DEDBD2;
+  	width:30em;
+}
+
+.theContent{
+	padding-right: 20px;
+}
+
+.firstTitle{
+	padding-top: 5px;
+}
+
+h1 {
+	font-size: 20px;
+	font-family: "Daxline";
+    margin-left: 10px;
+    font-style: bold;
+}
+
+.inputData{
+	line-height: 2em;
+	margin-left: 10px;
+}
+
+.inputData input{
+	border: 1px #897C69 solid;
+	border-radius: 2px;
+	margin-left: 160px;
+	padding: 2px 60px 2px 0px;
+
+}
+
+.inputData label{
+	position: absolute;
+}
+
+hr{
+	background: linear-gradient(#B2A594, #897C69);
+}
+
+button{
+	background: linear-gradient(#B2A594, #897C69); 
+	border-radius: 4px;
+	padding:3px 6px; 
+	margin-left: 170px;
+	margin-top: 10px;
+	
+}
+
+
+
+
+
+

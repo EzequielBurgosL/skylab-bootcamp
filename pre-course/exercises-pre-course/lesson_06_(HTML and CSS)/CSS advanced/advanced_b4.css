@@ -1,0 +1,100 @@
+body{
+	background-color: #222244;
+	font-family: Arial;
+}
+
+
+.whole-page{
+	background-color: white;
+	width: 700px;
+	height: 700px;	
+	/*border-radius: 40px;*/
+	margin: auto;
+	background-color: #222244;
+}
+
+.page-title{
+	height: 180px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;	
+	background-color: #444466;
+}
+
+img{
+	float: left;
+	margin-left: 21px;
+}
+
+.title{
+	padding-top: 50px;
+	font-size: 70px;
+	font-style: italic;
+	color: white;
+}
+
+.center-part{
+	display: table-row;
+	font-size: 13px;
+	background-color: white;
+
+}
+
+.left-part{
+	display: table-cell;
+	padding-right: 10px;
+	color: #886666;
+}
+
+.nav-list{
+	list-style-type: none;
+	width: 150px;
+}
+
+.left-part p{
+	margin-left: 15px;
+	margin-right: 10px;
+	font-size: 10px;
+	text-align: justify;
+
+}
+
+ul.nav-list{
+	padding-left: 0px;
+	margin-right: 10px;
+}
+
+.left-part-list{
+	padding-left: 20px;
+}
+
+hr{
+	border-top: dotted 0.8px;
+	margin-top: 0px;
+}
+
+
+.right-part{
+	display: table-cell;
+	padding-bottom: 20px;
+	color: #443333;
+	padding-right: 30px; 
+	text-align: justify;
+}
+
+.footer{
+	background-color: #664444;
+	height: 60px;
+	text-align: center;
+	color: white;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+
+}
+
+.footer-logo{
+	margin-top: 0px;
+	padding-top: 25px;
+	font-weight: lighter;
+	font-size: 11px;
+	color: #C7CCC6;
+}

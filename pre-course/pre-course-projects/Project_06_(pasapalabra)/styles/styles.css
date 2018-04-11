@@ -1,0 +1,308 @@
+body{
+	font-family: Arial;
+    margin: 0 auto;
+    background-image: url(http://jonvilma.com/images/space-planets-1.jpg);
+    /*background-image: url('./image/background_image.jpg');*/
+    background-size: cover; 
+}  
+
+.main{
+    width: 1000px;
+    height: 600px;
+    margin: auto;
+    margin-top: 20px;
+    border: 2px solid grey;
+    background: linear-gradient(to bottom right, black, #3E7CCD);
+    opacity: 0.99;
+}
+
+#project-title{
+    text-align: center;
+    color: lightgrey;
+    text-decoration: underline;
+    margin: 0;
+    padding: 25px 0px;
+    border-bottom: 2px solid grey;
+    background-color: black;
+    opacity: 0.2;
+}
+
+#project-title:hover{
+    opacity: 0.3;
+}
+
+#parentdiv{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    /*background-color: #ac5;*/
+    border: 2px solid lightgrey;
+    border-radius: 150px;
+    margin: 100px 150px;
+    float: left;
+
+}
+
+/*
+.div2{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ac5;
+    border-radius: 100px; 
+}
+*/
+
+#title{
+	position: absolute;
+	top: 112px;
+	left: 60px;
+	color: lightgrey;
+    opacity: 0.6;
+    text-shadow: 3px 3px 1px black; 
+}
+
+.circles{
+    width: 400px;
+    height: 400px;
+}
+
+.content-box{
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    padding: 20px;
+    color: white;
+    /*background-color: grey;*/
+    border: 2px solid grey;
+    display: inline-block;
+    opacity: 0.7;
+    box-shadow: 10px 10px 5px black;
+}
+
+#answer-input{
+    width: 150px;
+    height: 25px;
+    font-size: 14px;
+    color: white;
+    background: radial-gradient(#3E7CCD, #113454);
+    text-align: center;
+}
+
+
+#answer-input:focus {
+    outline: none;
+}
+
+#enter-answer, #start-game, #refresh-game{
+    margin-left: 20px; 
+    padding: 4px 8px;
+    font-size: 14px;
+    letter-spacing: 0.7px;
+    color: white;
+    background: radial-gradient(#3E7CCD, #113454);
+    border: 2px solid grey;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+#start-game{
+    padding: 5px 12px;
+}
+
+#refresh-game{
+    margin-left: 31px;
+}
+
+#enter-answer:hover, #start-game:hover, #refresh-game:hover{
+    opacity: 1;
+}    
+
+#enter-answer:active, #start-game:active, #refresh-game:active{
+    position:relative;
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+}
+
+#questionbox, #stats-box{
+    width: 270px;
+    height: 80px;   
+    border: 2px solid grey;
+    padding: 3%;
+    font-size: 14px;
+    color: lightgrey;
+
+}
+
+#questionbox{
+    margin-top: 20px;
+    overflow: scroll;
+}
+
+#inner-question-box{
+    font-size: 13px;
+}
+
+#stats-box{
+    color: grey;
+    width: 150px;
+}
+
+
+.circle {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+   /* background-color: #3E7CCD;*/
+    background: radial-gradient(#3E7CCD, #113454);
+    display: inline-block;
+    position: absolute;
+	z-index: 1;
+	text-align: center;
+	box-shadow: 2px 2px 1px grey;
+    box-sizing: border-box;
+    border: 1.5px solid grey;
+    opacity: 0.75;
+}
+
+.circle:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.circle:active{
+    background: radial-gradient(lightblue, #3E7CCD);
+}
+
+.circle p{
+	position: relative;
+	color: white;
+	bottom: 5px;
+}
+
+.a {
+    left: 118px;
+    bottom: 340px;
+}
+
+
+.b {
+    top: -77px;
+    left: 166px;
+}
+
+.c {
+    right: 46px;
+    top: -63px;
+}
+
+
+.d {
+    left: 255px;
+    bottom: 298px;
+}
+
+.e {
+    bottom: 265px;
+    left: 290px;
+}
+
+.f {
+    bottom: 225px;
+    left: 318px;
+}
+.g {
+    bottom: 178px;
+    left: 334px;
+}
+.h {
+    bottom: 130px;
+    left: 340px;
+}
+.i {
+    bottom: 82px;
+    left: 334px;
+}
+.j {
+    bottom: 36px;
+    left: 318px;
+}
+.k {
+    bottom: -5px;
+    left: 291px;
+}
+.l {
+    bottom: -38px;
+    left: 255px;
+}
+.m {
+    bottom: -63px;
+    left: 213px;
+}
+.n {
+    bottom: -76px;
+    left: 167px;
+}
+.ñ {
+    bottom: -80px;
+    left: 118px;
+}
+.o {
+    bottom: -71px;
+    left: 70px;
+}
+.p {
+    bottom: -52px;
+    left: 25px;
+}
+.q {
+    bottom: -22px;
+    left: -14px;
+}
+.r {
+    bottom: 15px;
+    left: -45px;
+}
+.s {
+    bottom: 58px;
+    left: -68px;
+}
+.t {
+    bottom: 105px;
+    left: -78px;
+}
+.u {
+    bottom: 155px;
+    left: -78px;
+}
+.v {
+    bottom: 202px;
+    left: -67px;
+}
+.w {
+    bottom: 246px;
+    left: -45px;
+}
+.x {
+    bottom: 283px;
+    left: -14px;
+}
+.y {
+    bottom: 312px;
+    left: 25px;
+}
+
+.z {
+    bottom: 331px;
+    left: 70px;
+}
+
+
+
+
+
+
+
+

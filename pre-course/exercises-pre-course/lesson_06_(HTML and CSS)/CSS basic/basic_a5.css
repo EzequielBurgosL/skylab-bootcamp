@@ -1,0 +1,54 @@
+body{
+	background-color: #67BE49;
+	margin:100px 200px;
+
+}
+
+table, td{
+
+}
+
+table{
+	border-spacing: 20px;
+	padding: 30px; 
+	box-shadow: 0px 5px 25px grey;
+	background-color: white;
+}
+
+td{
+
+	background-color: #F2F2F2;
+
+}
+
+input{
+	padding: 15px 150px 15px 15px;
+	font-size: 16px;
+	text-align: left;
+	background-color: #F2F2F2;
+	border: none;
+}
+
+input:hover{
+
+}
+
+button{
+	font-family: Arial;
+	color: white;
+	background-color: #00B242;
+	font-size: 16px;
+	padding: 15px 150px;
+}
+
+.last{
+	background-color: white;
+	text-align: center;
+	font-family: Arial;
+	color: #BDBDBD;
+}
+
+.last span{
+	color:#00B242;
+}
+

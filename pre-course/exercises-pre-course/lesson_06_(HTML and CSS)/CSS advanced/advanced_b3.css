@@ -1,0 +1,94 @@
+
+html{
+
+}
+
+body{
+	background-color: #10558C;
+	margin-left: 0px;
+	height: 800px;
+}
+
+h1{
+	text-transform: uppercase;
+	font-weight: lighter;
+	margin-bottom: 0px;
+	font-size: 28px;
+}
+
+p{
+	margin-top:0px;
+}
+
+h1, p{
+	margin-left: 30px;
+}
+
+h1 span{
+	color:#DDB472;
+}
+
+.title_tag{
+	margin-top: 60px;
+	margin-bottom: 40px;
+	padding-top: 10px;
+	width: 450px;
+	height: 90px;
+	background-color: #272727;
+	color: #FAFFFF;
+}
+
+.left-part{
+	color: #FAFFFF;
+	display: table-cell;
+	text-align: center;
+
+
+}
+
+.left-part{
+	margin: 20px;
+	padding: 0px 60px;
+	padding-right: 120px; 
+}
+
+.nav-list{
+	margin-left: none;
+	line-height: 25px;
+}
+
+.navigation-tag{
+	color: white;
+	text-decoration: none;
+
+}
+
+.right-part{
+	background-color: #FAFFFF;
+	width: 700px;
+	padding-top:1px;
+	padding-bottom: 50px;
+	display: table-cell;
+}
+
+.right-part h3{
+	color: #537893;
+	margin-left: 30px;
+	font-weight: lighter;
+	font-size: 22px;
+	letter-spacing: 1px;
+}
+
+.poema{
+	color:#537893;
+	margin-left:60px;
+}
+
+
+.poema span{
+	font-weight: bold;
+}
+
+.all-parts{
+	display: table-row;
+}

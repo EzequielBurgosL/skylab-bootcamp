@@ -1,0 +1,46 @@
+
+body{
+	max-width: 700px;
+	text-align: justify;
+}
+
+img{
+
+}
+
+h1, h2{
+	color:#255E13;
+}
+
+a{
+	color: blue;
+	font-weight: normal; 
+}
+
+a:active {
+    color: red;
+}
+
+a:visited{
+	color: blue;
+}
+
+table, th, td{
+	border: 1px solid black;
+}
+
+th{
+	text-align: center;
+}
+
+td{
+	color:purple;
+}
+
+label{
+	color: #A94712;
+}
+
+.light-orange{
+	color:#FBAB30;
+}

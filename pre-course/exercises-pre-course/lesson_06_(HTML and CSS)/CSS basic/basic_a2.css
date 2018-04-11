@@ -1,0 +1,107 @@
+
+form{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.first-six-rows button{
+	margin-top: 5px;
+	margin-bottom: 15px;
+	padding: 10px 40px;
+	border-radius: 4px;
+}
+
+.round-border button{
+	border-radius: 40px;
+}
+
+.small-buttons button{
+	border-radius: 40px;
+	padding:8px 30px;
+
+}
+
+.big-buttons button{
+	border-radius: 25px;
+	font-size: 40px;
+	padding:20px 50px;
+}
+
+/*BUTTON COLORS*/
+.grey{
+	background-color: #EAEAEA;
+	font-size: 16px;
+}
+
+.white-background .grey{
+	color: #EAEAEA;
+	border: 1px solid #EAEAEA;
+	background-color: white;
+	font-size: 16px;
+}
+
+.blue{
+	background-color: #5C9DED;
+	color:white;
+	font-size: 16px;
+}
+
+.white-background .blue{
+	color: #5C9DED;
+	border: 1px solid #5C9DED;
+	background-color: white;
+	font-size: 16px;
+}
+
+.green{
+	background-color: #42CB6E;
+	color:white;
+	font-size: 16px;
+}
+
+.white-background .green{
+	color: #42CB6E;
+	border: 1px solid #42CB6E;
+	background-color: white;
+	font-size: 16px;
+}
+
+.lightblue{
+	background-color: #4EC2E8;
+	color:white;
+	font-size: 16px;
+}
+
+.white-background .lightblue{
+	color: #4EC2E8;
+	border: 1px solid #4EC2E8;
+	background-color: white;
+	font-size: 16px;
+}
+
+.yellow{
+	background-color: #FCCE54;
+	color:white;
+	font-size: 16px;
+}
+
+.white-background .yellow{
+	color: #FCCE54;
+	border: 1px solid #FCCE54;
+	background-color: white;
+	font-size: 16px;
+}
+
+.red{
+	background-color: #ED5463;
+	color:white;
+	font-size: 16px;
+}
+
+.white-background .red{
+	color: #ED5463;
+	border: 1px solid #ED5463;
+	background-color: white;
+	font-size: 16px;
+}
+
