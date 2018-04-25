@@ -93,3 +93,10 @@ git add -A
 
 borra carpeta --> rm -rf git/
 
+
+Para actualizar la información:
+
+git fetch upstream
+git merge upstream/develop
+git push
+
