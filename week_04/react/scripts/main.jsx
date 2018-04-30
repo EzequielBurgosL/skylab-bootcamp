@@ -1,39 +1,29 @@
 'use strict'
 
-const main = <main>
-    <section>
-        <h1>Hello, World!</h1>
+const title = 'Hello World!'
+const a = 2, b = 3
+
+
+
+function operation(a, b, symbol) {
+    return <section>
+        <h2>{symbol === '+' ? 'Addition' : 'Substraction'}</h2>
+        {a} {symbol} {b} = {symbol === '+' ? a + b : a - b}
     </section>
-    <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-        <li>item 4
-            <ul>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ul>
-        </li>
-    </ul>
-</main>
+}
+
+const main =
+    <main>
+        <h1>{title}</h1>
+        {operation(2, 3, '+')}
+        {operation(3, 2, '-')}
 
 
-const footer = 
-<div>
-<section>Que chuliiii</section>
-<ul>
-    <li>Hello</li>
-</ul>
-<section>Que chuliiii</section>
-<section>Que chuliiii</section>
-<section>Que chuliiii</section>
-</div>
-
-
+        <o  peration a={2} b={3} symbol={'-'}/>
+    </main>
 
 
 ReactDOM.render(main, document.getElementById('root'))
-ReactDOM.render(footer, document.getElementById('root2'))
+
 
 
