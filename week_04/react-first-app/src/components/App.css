@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+}
+.mainForm{
+  padding: 2%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.input{
+  width: 20%;
+  height: 30px;
+  font-size: calc(13px + 1vw);
+  margin: 0px 10px;
+  border-radius: 5px;
+}
+
+.button{
+  background: linear-gradient(0deg, #E95C41 50%, #EC6C53 51%);
+  color: white;
+  border-radius: 5px;
+  /* padding: 4% 14% 4% 14%; */
+  text-shadow: 2px 2px 5px #A83020;
+}
+
+
+.footer {
+  background: #191814;
+  min-height: 400px;
+  color: #878682;
+  font-size: 50%;
+  text-align: center;
+}
+
+.footer-box {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  /* border: 1px solid white; */
+}
+
+.mainSection{
+  min-height: 600px;
+  background: linear-gradient(lightblue, lightcyan);
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background: linear-gradient(lightblue, black);
+  height: 150px;
+  padding: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(156, 113, 113);
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(3600deg); }
+}

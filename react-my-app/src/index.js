@@ -8,7 +8,3 @@ import Calculator from './components/Calculator'
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(<Calculator operation={'+'} />, document.getElementById('root'));
 registerServiceWorker();
-
-const routes = (
-    <h1>Hello World</h1>
-  );
