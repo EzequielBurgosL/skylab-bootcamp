@@ -1,17 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ConditionalSection from './sections/conditional'
+import cars from './data/cars.json'
+
+class CarItem extends Component {
+  render() {
+    const { car } = this.props
+
+    return (
+      <li >
+        <p><strong>Name: </strong>{car.name}</p>
+        <p><strong>Name: </strong>{car.company}</p>
+      </li>
+    )
+  }
+}
 
 class App extends Component {
   render() {
+
+    const numbers = [1, 2, 3, 4, 5]
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">hello world</h1>
-        </header>
-        <h2>Esto es un h2</h2>
-        <p className="App-intro">esto es el párrafo central</p>
+        <h4>working with lists</h4>
+        <ul>
+
+          {
+            cars.map(car => {
+              return <CarItem key={car.id} car={car} />
+            })
+          }
+        </ul>
       </div>
     );
   }
