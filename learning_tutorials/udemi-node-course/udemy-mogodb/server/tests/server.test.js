@@ -11,7 +11,9 @@ const todos = [{
     text: 'first test todo'
 }, {
     _id: new ObjectID(),
-    text: 'second test todo'
+    text: 'second test todo',
+    completed: true,
+    completedAt: 333
 
 }]
 
@@ -117,7 +119,7 @@ describe('DELETE /todos/:id', () => {
                     return done(err)
                 }
                 Todo.findById(hexId).then((todo) => {
-                    expect(todo).toBeUndefined()
+                    expect(todo).toBe(null)
                     done()
                 }).catch((err) => done(err))
 
@@ -128,16 +130,68 @@ describe('DELETE /todos/:id', () => {
         var hexID = new ObjectID().toHexString()
 
         request(app)
-            .get(`/todos/${hexID}`)
+            .delete(`/todos/${hexID}`)
             .expect(404)
             .end(done)
     })
     it('should return a 404 if incorrect id', (done) => {
 
         request(app)
-            .get(`/todos/123`)
+            .delete(`/todos/123`)
             .expect(404)
             .end(done)
     })
 
+})
+
+describe(`PATCH todos/:id`, () => {
+    it(`should update the todo`, (done)=> {
+        var hexId = todos[0]._id.toHexString()
+
+        request(app)
+            .patch(`/todos/${hexId}`)
+            .send({text: 'hello my friend', completed: true})
+            .expect(200)
+            .expect((res) => {
+                expect(res.body.todo._id).toBe(hexId)
+                expect(res.body.todo.text).toBe('hello my friend')
+                expect(res.body.todo.completed).toBe(true)
+                expect(typeof res.body.todo.completedAt).toBe('number')
+            })
+            .end((err, res) => {
+                if(err){
+                    return done(err)
+                }
+                Todo.findById(hexId).then((todo) => {
+                    expect(todo.text).toBe('hello my friend')
+                    done()
+                }).catch((err) => done(err))
+
+            })
+    })
+
+    it(`should clear completedAt when todo is not completed`, (done) => {
+        var hexId = todos[1]._id.toHexString()
+
+        request(app)
+            .patch(`/todos/${hexId}`)
+            .send({text: 'hello baby', completed: false})
+            .expect(200)
+            .expect((res) => {
+                expect(res.body.todo._id).toBe(hexId)
+                expect(res.body.todo.text).toBe('hello baby')
+            })
+            .end((err, res) => {
+                if(err){
+                    return done(err)
+                }
+                Todo.findById(hexId).then((todo) => {
+                    expect(todo.completed).toBe(false)
+                    expect(todo.completedAt).toBe(null)
+                    expect(todo.text).toBe('hello baby')
+                    done()
+                }).catch((err) => done(err))
+
+            })
+    })
 })

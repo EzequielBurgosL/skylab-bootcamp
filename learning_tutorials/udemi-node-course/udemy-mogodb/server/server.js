@@ -1,3 +1,6 @@
+var env = process.env.NODE_ENV
+
+const _ = require('lodash')
 const express = require('express')
 const bodyParser = require('body-parser')
 const { ObjectID } = require('mongodb')
@@ -11,6 +14,21 @@ const port = process.env.PORT || 3000
 
 
 app.use(bodyParser.json());
+
+app.post('/users', (req, res) => {
+    var body = _.pick(req.body, ['email', 'password'])
+
+    var user = new User(body)
+
+    user.save()
+        .then((user) => {
+            res.send(user)
+        })
+        .catch((error) => {
+            res.status(400).send(error)
+        })
+})
+
 
 app.post('/todos', (req, res) => {
     var todo = new Todo({
@@ -52,6 +70,35 @@ app.get('/todos/:id', (req, res) => {
         });
 });
 
+
+app.patch('/todos/:id', (req, res) => {
+    // var id = req.params.id;
+    const { params: { id } } = req
+    var body = _.pick(req.body, ['text', 'completed'])
+
+    if (!ObjectID.isValid(id)) {
+        return res.status(404).send();
+    }
+
+    if (_.isBoolean(body.completed) && body.completed) {
+        body.completedAt = new Date().getTime();
+    } else {
+        body.completed = false;
+        body.completedAt = null;
+
+    }
+
+    Todo.findByIdAndUpdate(id, { $set: body }, { new: true }).then((todo) => {
+        if (!todo) {
+            return res.status(404).send()
+        }
+        res.send({ todo })
+    }).catch((err) => {
+        res.status(400).send()
+    })
+
+});
+
 app.delete('/todos/:id', (req, res) => {
     var id = req.params.id
 
@@ -65,7 +112,7 @@ app.delete('/todos/:id', (req, res) => {
                 return res.status(404).send()
             }
 
-            res.send({todo})
+            res.send({ todo })
         }).catch((e) => {
             res.status(400).send();
         });
