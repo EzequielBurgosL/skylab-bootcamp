@@ -33,6 +33,11 @@ This project is an [e-commerce](https://en.wikipedia.org/wiki/E-commerce) design
 
 //TODO...
 
+
+### Home Page
+
+![](./docs/sketch/home-page.png)
+
 ### Products (Categories)
 
 ![](./docs/sketch/categories-page.png)
