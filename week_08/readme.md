@@ -31,11 +31,15 @@ This project is an [e-commerce](https://en.wikipedia.org/wiki/E-commerce) design
 
 ## DESIGN (screenshots)
 
+//TODO...
+
 ## DEMO
 
 You can see a demo of the project here: [surge](http://skypizzas.surge.sh/)
 
 ## Sprint Plan
 
+//TODO...
 
+![](./docs/gant-chart.png)
 
