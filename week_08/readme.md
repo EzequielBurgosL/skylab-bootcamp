@@ -42,6 +42,10 @@ This project is an [e-commerce](https://en.wikipedia.org/wiki/E-commerce) design
 
 ![](./docs/sketch/categories-page.png)
 
+### Product page
+
+![](./docs/sketch/product-page.png)
+
 ## DEMO
 
 //TODO
