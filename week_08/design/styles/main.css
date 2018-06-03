@@ -1,0 +1,26 @@
+.fas {
+    color: red;
+}
+
+.first-main {
+    background-image: url('http://www.desktop-screens.com/data/out/74/3157140-microphone-wallpapers.jpg');
+    /* http://www.desktop-screens.com/microphone-wallpapers.html */
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.main-title{
+    color: white;
+    font-weight: bold;
+}
+
+.footer{
+    padding: 10%;
+    background-color: rgb(41, 41, 41);
+    color: lightgray;
+}
+
+.footer a{
+    color: lightgray !important;
+}

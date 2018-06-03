@@ -33,9 +33,15 @@ This project is an [e-commerce](https://en.wikipedia.org/wiki/E-commerce) design
 
 //TODO...
 
+### Products (Categories)
+
+![](./docs/sketch/categories-page.png)
+
 ## DEMO
 
-You can see a demo of the project here: [surge](http://skypizzas.surge.sh/)
+//TODO
+
+You can see a demo of the project here: surge
 
 ## Sprint Plan
 
