@@ -24,3 +24,8 @@
 .footer a{
     color: lightgray !important;
 }
+
+.thumbnail{
+    display: flex;
+    
+}
