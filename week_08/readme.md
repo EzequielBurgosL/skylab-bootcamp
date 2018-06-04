@@ -23,7 +23,7 @@ This project is an [e-commerce](https://en.wikipedia.org/wiki/E-commerce) design
 
 ## DATA MODEL
 
-![data model](./docs/data-model.png)
+![](./docs/data-model.png)
 
 ## BLOCK MODEL
 
