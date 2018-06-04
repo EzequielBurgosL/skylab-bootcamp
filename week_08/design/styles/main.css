@@ -7,7 +7,8 @@
    */
 
 .site-header {
-    background-color: rgba(0, 0, 0, .85);
+    /* background-color: rgba(129, 61, 61, 0.85); */
+    background: linear-gradient(to left, rgb(121, 27, 105), rgb(34, 8, 44));
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
 }
@@ -22,7 +23,6 @@
     color: #fff;
     text-decoration: none;
 }
-
 /*
    * Extra utilities
    */
@@ -44,6 +44,12 @@
     flex: 1;
 }
 
+@media (min-width: 768px){
+    .m-md-3 {
+        margin: 0rem !important;
+    }
+}
+
 @media (min-width: 768px) {
     .flex-md-equal>* {
         -ms-flex: 1;
@@ -63,17 +69,39 @@ Home page CSS
     color: red;
 }
 
-.first-main {
-    background-image: url('http://www.desktop-screens.com/data/out/74/3157140-microphone-wallpapers.jpg');
-    /* http://www.desktop-screens.com/microphone-wallpapers.html */
+.first-main{
+    background: linear-gradient(-40deg, #9824af49, #5c1b535e, transparent), url('../images/microphone.jpg');
     background-size: cover;
     background-position: top left;
     background-repeat: no-repeat;
+    
 }
 
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+  
+  
 .main-title {
-    color: white;
+    color: rgb(226, 226, 226);
     font-weight: bold;
+    text-align: left;
+    margin-left: 20% !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .footer {

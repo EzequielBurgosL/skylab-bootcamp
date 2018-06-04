@@ -1,3 +1,29 @@
+body{
+    background: url('../images/login-micro.jpeg');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.form-signin{
+    color: lightgray;
+    letter-spacing: 0.08em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#inputEmail, #inputPassword{
+    background: rgba(255, 255, 255, 0);
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 3px;
+}
+
+.login-submit{
+    background: linear-gradient(to left, rgba(121, 27, 105, 0.349), rgba(34, 8, 44, 0.342)) !important;
+    border: 1px solid purple !important;
+}
+
 .form-signin {
     width: 100%;
     max-width: 330px;
