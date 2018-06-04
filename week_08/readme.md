@@ -38,6 +38,14 @@ This project is an [e-commerce](https://en.wikipedia.org/wiki/E-commerce) design
 
 ![](./docs/sketch/home-page.png)
 
+### Login
+
+![](./docs/sketch/login.png)
+
+### Register
+
+![](./docs/sketch/register.png)
+
 ### Products (Categories)
 
 ![](./docs/sketch/categories-page.png)
@@ -46,6 +54,9 @@ This project is an [e-commerce](https://en.wikipedia.org/wiki/E-commerce) design
 
 ![](./docs/sketch/product-page.png)
 
+### Cart
+
+![](./docs/sketch/cart-page.png)
 
 ## DEMO
 
