@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-06-03" view-index="0" gantt-divider-location="348" resource-divider-location="300" version="2.8.8" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-06-03" view-index="0" gantt-divider-location="376" resource-divider-location="300" version="2.8.8" locale="en_US">
     <description/>
     <view zooming-state="default:2" id="gantt-chart">
-        <field id="tpd3" name="Name" width="193" order="0"/>
-        <field id="tpd4" name="Begin date" width="66" order="1"/>
+        <field id="tpd3" name="Name" width="211" order="0"/>
+        <field id="tpd4" name="Begin date" width="76" order="1"/>
         <field id="tpd5" name="End date" width="68" order="2"/>
     </view>
     <view id="resource-table">
@@ -33,33 +33,33 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="0" name="Design" color="#000000" meeting="false" start="2018-06-04" duration="2" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true">
-            <task id="2" name="mockup" color="#8cb6ce" meeting="false" start="2018-06-04" duration="2" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true"/>
+        <task id="0" name="Setting overall architecture" color="#000000" meeting="false" start="2018-06-04" duration="2" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true">
+            <task id="2" name="Setting project architecture" color="#8cb6ce" meeting="false" start="2018-06-04" duration="2" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="26" name="task_26" meeting="false" start="2018-06-04" duration="7" complete="0" expand="true">
-            <task id="28" name="Copy_Design" color="#8cb6ce" meeting="false" start="2018-06-04" duration="2" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true"/>
-            <task id="30" name="Copy_task_3" color="#8cb6ce" meeting="false" start="2018-06-05" duration="1" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true"/>
-            <task id="32" name="Copy_task_4" color="#8cb6ce" meeting="false" start="2018-06-06" duration="1" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true"/>
-            <task id="34" name="Copy_task_5" meeting="false" start="2018-06-07" duration="1" complete="0" expand="true"/>
-            <task id="36" name="Copy_task_6" meeting="false" start="2018-06-08" duration="1" complete="0" expand="true"/>
-            <task id="38" name="Copy_task_7" meeting="false" start="2018-06-09" duration="1" complete="0" expand="true"/>
-            <task id="40" name="Copy_task_25" meeting="false" start="2018-06-10" duration="1" complete="0" expand="true"/>
+        <task id="26" name="styles &amp; server side" color="#000000" meeting="false" start="2018-06-04" duration="7" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true">
+            <task id="28" name="sketch (draw io)" color="#8cb6ce" meeting="false" start="2018-06-04" duration="2" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true"/>
+            <task id="30" name="Creating models" color="#8cb6ce" meeting="false" start="2018-06-05" duration="1" complete="0" thirdDate="2018-06-05" thirdDate-constraint="0" expand="true"/>
+            <task id="32" name="html, css, bootstrap" color="#8cb6ce" meeting="false" start="2018-06-06" duration="1" complete="0" thirdDate="2018-06-06" thirdDate-constraint="0" expand="true"/>
+            <task id="34" name="server logic" color="#8cb6ce" meeting="false" start="2018-06-07" duration="1" complete="0" thirdDate="2018-06-07" thirdDate-constraint="0" expand="true"/>
+            <task id="36" name="server logic" color="#8cb6ce" meeting="false" start="2018-06-08" duration="1" complete="0" thirdDate="2018-06-08" thirdDate-constraint="0" expand="true"/>
+            <task id="38" name="server testing" color="#8cb6ce" meeting="false" start="2018-06-09" duration="1" complete="0" thirdDate="2018-06-09" thirdDate-constraint="0" expand="true"/>
+            <task id="40" name="server api" color="#8cb6ce" meeting="false" start="2018-06-10" duration="1" complete="0" thirdDate="2018-06-10" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="8" name="client side" meeting="false" start="2018-06-11" duration="7" complete="0" expand="true">
-            <task id="9" name="task_9" color="#8cb6ce" meeting="false" start="2018-06-11" duration="1" complete="0" thirdDate="2018-06-04" thirdDate-constraint="0" expand="true"/>
-            <task id="10" name="task_10" meeting="false" start="2018-06-12" duration="1" complete="0" expand="true"/>
-            <task id="11" name="task_11" meeting="false" start="2018-06-13" duration="1" complete="0" expand="true"/>
-            <task id="12" name="task_12" meeting="false" start="2018-06-14" duration="1" complete="0" expand="true"/>
-            <task id="13" name="task_13" meeting="false" start="2018-06-15" duration="1" complete="0" expand="true"/>
-            <task id="14" name="task_14" meeting="false" start="2018-06-16" duration="1" complete="0" expand="true"/>
-            <task id="15" name="task_15" meeting="false" start="2018-06-17" duration="1" complete="0" expand="true"/>
+            <task id="9" name="setting environment" color="#8cb6ce" meeting="false" start="2018-06-11" duration="1" complete="0" thirdDate="2018-06-11" thirdDate-constraint="0" expand="true"/>
+            <task id="10" name="api client logic" color="#8cb6ce" meeting="false" start="2018-06-12" duration="1" complete="0" thirdDate="2018-06-12" thirdDate-constraint="0" expand="true"/>
+            <task id="11" name="client app logic" color="#8cb6ce" meeting="false" start="2018-06-13" duration="1" complete="0" thirdDate="2018-06-13" thirdDate-constraint="0" expand="true"/>
+            <task id="12" name="testing client app logic" color="#8cb6ce" meeting="false" start="2018-06-14" duration="1" complete="0" thirdDate="2018-06-14" thirdDate-constraint="0" expand="true"/>
+            <task id="13" name="setting react" color="#8cb6ce" meeting="false" start="2018-06-15" duration="1" complete="0" thirdDate="2018-06-15" thirdDate-constraint="0" expand="true"/>
+            <task id="14" name="connecting all layers" color="#8cb6ce" meeting="false" start="2018-06-16" duration="1" complete="0" thirdDate="2018-06-16" thirdDate-constraint="0" expand="true"/>
+            <task id="15" name="React and functions" color="#8cb6ce" meeting="false" start="2018-06-17" duration="1" complete="0" thirdDate="2018-06-17" thirdDate-constraint="0" expand="true"/>
         </task>
         <task id="16" name="React" meeting="false" start="2018-06-18" duration="5" complete="0" expand="true">
-            <task id="17" name="" meeting="false" start="2018-06-18" duration="1" complete="0" expand="true"/>
-            <task id="18" name="task_18" meeting="false" start="2018-06-19" duration="1" complete="0" expand="true"/>
-            <task id="19" name="task_19" meeting="false" start="2018-06-20" duration="1" complete="0" expand="true"/>
-            <task id="20" name="task_20" meeting="false" start="2018-06-21" duration="1" complete="0" expand="true"/>
-            <task id="21" name="task_21" meeting="false" start="2018-06-22" duration="1" complete="0" expand="true"/>
+            <task id="17" name="React" color="#8cb6ce" meeting="false" start="2018-06-18" duration="1" complete="0" thirdDate="2018-06-18" thirdDate-constraint="0" expand="true"/>
+            <task id="18" name="React and functions" color="#8cb6ce" meeting="false" start="2018-06-19" duration="1" complete="0" thirdDate="2018-06-19" thirdDate-constraint="0" expand="true"/>
+            <task id="19" name="Fixing bugs and styling" color="#8cb6ce" meeting="false" start="2018-06-20" duration="1" complete="0" thirdDate="2018-06-20" thirdDate-constraint="0" expand="true"/>
+            <task id="20" name="Fixing bugs" color="#8cb6ce" meeting="false" start="2018-06-21" duration="1" complete="0" thirdDate="2018-06-21" thirdDate-constraint="0" expand="true"/>
+            <task id="21" name="Presentation" color="#8cb6ce" meeting="false" start="2018-06-22" duration="1" complete="0" thirdDate="2018-06-22" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources/>

@@ -1,0 +1,31 @@
+body {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('https://images7.alphacoders.com/312/312092.jpg');
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightgray;
+}
+
+.main-form {
+    padding: 3%;
+}
+
+input {
+    display: block;
+    border-radius: 3px;
+    padding: 6px;
+    width: calc(10% + 110px);
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+
+button{
+    padding: 6px; 
+    border-radius: 3px;
+}
