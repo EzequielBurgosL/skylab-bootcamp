@@ -1,16 +1,52 @@
 
-// logic.retrieveUser('EzequielBurgosL')
-//     .then(response => {
-//         var user = `
-//         <ul class="list-group">
-//         <li class="list-group-item">Calle y número: ${response.data.results[0].address_components[1].long_name} ${response.data.results[0].address_components[0].long_name}</li>
-//         <li class="list-group-item">Código postal: ${response.data.results[0].address_components[6].long_name}</li>
-//         <li class="list-group-item">Ciudad: ${response.data.results[0].address_components[2].long_name}</li>
-//         <li class="list-group-item">País: ${response.data.results[0].address_components[5].long_name}</li>
-//         </ul>
-//         `;
-//         document.getElementById('formatted-address').innerHTML = formattedAddressOutput;
-//     })
-//     .catch(function (error) {
-//         console.log(error);
-//     });
+// Get user form
+const userForm = document.getElementById('user-form');
+
+// Listen for submit
+userForm.addEventListener('submit', userRetriever);
+
+// function userRetriever(e){
+function userRetriever(e) {
+    e.preventDefault()
+
+    const user = document.getElementById('user-input').value;
+
+    logic.retrieveUser(user)
+        .then(response => {
+
+            console.log(response)
+
+            var formattedUserOutput = `
+            <div class="formattedUserOutput">
+                <ul >
+                    <li class="formattedUserOutput-li">Name: ${response.login}</li>
+                    <li>id: ${response.id}</li>
+                    <li>url: ${response.url}</li>
+                    <li><img src=${response.avatar_url}></li>            
+                </ul>
+            </div>
+            `;
+            document.getElementById('formatted-user').innerHTML = formattedUserOutput;
+        })
+        .catch(function (error) {
+            console.log('this is the error ' + error);
+
+            var formattedUserOutput = `
+                <div class="error-message">No user with name ${user} was found</div>
+            `;
+            document.getElementById('formatted-user').innerHTML = formattedUserOutput;
+        });
+}
+
+
+/* login: 'EzequielBurgosL',
+  id: 36644436,
+  node_id: 'MDQ6VXNlcjM2NjQ0NDM2',
+  avatar_url: 'https://avatars3.githubusercontent.com/u/36644436?v=4' --> image
+  url: 'https://api.github.com/users/EzequielBurgosL' */
+  /*  public_repos: 3,
+  public_gists: 0,
+  followers: 3,
+  following: 18,
+  created_at: '2018-02-19T19:25:15Z',
+  updated_at: '2018-06-25T16:19:47Z'  */
