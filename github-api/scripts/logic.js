@@ -2,9 +2,19 @@
 
 const logic = {
     url: 'https://api.github.com',
-    // token: 'TOKEN',
+    
+    // A generated token required to access Github's Api services
     token: '8851a5ea19265e563cdbd906b9156124a05a5ba9',
 
+    /**
+    * 
+    * @description This function makes an axios request to the Github Api to get user information 
+    * 
+    * @method GET
+    * @param {username} username  - Github user's credential
+    * @returns {[data]} - Returns an array with user's Github info 
+    * @throws {error} - Throws error when request could not reach server or when no username matches the request
+    */
     retrieveUser(username) {
         return Promise.resolve()
             .then(() => {
@@ -29,6 +39,15 @@ const logic = {
             })
     },
 
+    /**
+    * 
+    * @description This function makes an axios request to the Github Api to get user repositories information 
+    * 
+    * @method GET
+    * @param {username} username  - Github user's credential
+    * @returns {[data]} - Returns an array with user's Github repositories info 
+    * @throws {error} - Throws error when request could not reach server or when no username matches the request
+    */
     retrieveRepos(username) {
         return Promise.resolve()
             .then(() => {
