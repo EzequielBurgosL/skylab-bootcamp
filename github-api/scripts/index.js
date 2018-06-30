@@ -1,3 +1,4 @@
+'use strict'
 
 // Get user form
 const userForm = document.getElementById('user-form');
@@ -5,7 +6,7 @@ const userForm = document.getElementById('user-form');
 // Listen for submit
 userForm.addEventListener('submit', userRetriever);
 
-// function userRetriever(e){
+
 function userRetriever(e) {
     e.preventDefault()
 
@@ -14,39 +15,55 @@ function userRetriever(e) {
     logic.retrieveUser(user)
         .then(response => {
 
-            console.log(response)
-
             var formattedUserOutput = `
             <div class="formattedUserOutput">
-                <ul >
-                    <li class="formattedUserOutput-li">Name: ${response.login}</li>
-                    <li>id: ${response.id}</li>
-                    <li>url: ${response.url}</li>
-                    <li><img src=${response.avatar_url}></li>            
-                </ul>
+                <section class="formattedUserOutput-header">
+                    <img src=${response.avatar_url} class="formattedUserOutput-img"> 
+                    <div class="header-right">
+                        ${response.login ? `<p class="formattedUserOutput-header-item">@${response.login}</p>` : ''}         
+                        ${response.name ? `<h2 class="formattedUserOutput-header-item">${response.name}</h2>` : ''}         
+                        ${response.bio ? `<p class="formattedUserOutput-header-item bio">${response.bio}</p>` : ''}    
+                    </div> 
+                </section>
             </div>
             `;
+
             document.getElementById('formatted-user').innerHTML = formattedUserOutput;
         })
-        .catch(function (error) {
-            console.log('this is the error ' + error);
-
+        .catch(error => {
             var formattedUserOutput = `
-                <div class="error-message">No user with name ${user} was found</div>
-            `;
+                ${user
+                    ?
+                    `<div class="error-message">No user with name <i>${user}</i> was found</div>`
+                    :
+                    `<div class="error-message">Please introduce a username</div>`}
+                `;
             document.getElementById('formatted-user').innerHTML = formattedUserOutput;
         });
+
+
+    logic.retrieveRepos(user)
+        .then(response => {
+
+            var formattedRepos = `
+                <h3 class="list-header">Repositories</h3>
+                <ul>
+                    ${response.map((repos, item) => `
+                    <li class="repos-list-item">
+                        <div class="repo-name">${response[item].name}</div>
+                        <div class="repo-info">
+                            ${response[item].stargazers_count ? `<span> <img src="styles/images/star-image.png">${response[item].stargazers_count}</span>` : ``}
+                            <span><img src="styles/images/fork-image.png"> ${response[item].forks}</span>
+                        </div>
+                    </li>`).join(' ')}
+                </ul>
+                `
+
+            document.getElementById('formatted-repos').innerHTML = formattedRepos;
+        })
+        .catch(error => {
+            var formattedRepos = ``;
+            document.getElementById('formatted-repos').innerHTML = formattedRepos;
+        });
+
 }
-
-
-/* login: 'EzequielBurgosL',
-  id: 36644436,
-  node_id: 'MDQ6VXNlcjM2NjQ0NDM2',
-  avatar_url: 'https://avatars3.githubusercontent.com/u/36644436?v=4' --> image
-  url: 'https://api.github.com/users/EzequielBurgosL' */
-  /*  public_repos: 3,
-  public_gists: 0,
-  followers: 3,
-  following: 18,
-  created_at: '2018-02-19T19:25:15Z',
-  updated_at: '2018-06-25T16:19:47Z'  */

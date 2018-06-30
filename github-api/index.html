@@ -6,19 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/user.css">
+    <link rel="stylesheet" href="styles/user-repos.css">
     <title>Document</title>
 </head>
 
 <body>
-
-    <h1>github app</h1>
     <div class="main-container">
         <form id="user-form">
-            <input type="text" id="user-input">
-            <br>
-            <button type="submit" class="submit-button">Submit</button>
+            <input type="text" id="user-input" placeholder="Search username...">
+            <input type="submit" class="submit-button" value="Search">
         </form>
-        <div class="card-block" id="formatted-user"></div>
+        <section id="formatted-user"></section>
+        <section id="formatted-repos"></section>
     </div>
 
     <script src="scripts/logic.js"></script>

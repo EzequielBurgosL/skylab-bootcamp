@@ -1,0 +1,27 @@
+.formattedUserOutput-header {
+    display: flex;
+    height: 100px;
+    padding: 2%;
+}
+
+.formattedUserOutput-img {
+    width: 30%;
+    margin-right: 3%;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+.formattedUserOutput-header-item {
+    margin: 0;
+}
+
+.formattedUserOutput-header-item:first-child {
+    font-style: italic;
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+}
+
+.bio{
+    font-size: 14px;
+    color: rgb(65, 65, 65);
+}

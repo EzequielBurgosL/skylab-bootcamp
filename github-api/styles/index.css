@@ -12,22 +12,29 @@ body {
     padding: 3%;
     width: 40%;
     box-sizing: border-box;
-    box-shadow: 4px 4px 10px grey;
+    box-shadow: 5px 5px 15px rgba(128, 128, 128, 0.884);
     border-radius: 20px;
+    max-height: 500px;
+    overflow: scroll;
 }
 
 #user-form{
     display: flex;
     justify-content: space-around;
+    padding: 5px;
 }
 
 #user-input{
     width: 70%;
-    padding: 2%;
+    padding: 2.5%;
     border-radius: 5px;
     border: 1px solid lightgray;
     display: inline-block;
-    
+    font-size: 14px;
+}
+
+::placeholder {
+    color: rgb(189, 189, 189);
 }
 
 #user-input:focus{
@@ -35,15 +42,16 @@ body {
 }
 
 .submit-button{
-    padding: 2%;
+    padding: 2% 4%; 
     border-radius: 5px;
+    font-weight: bold;
+    background: linear-gradient(white, lightgray);
+    font-size: 14px;
 }
 
-.formattedUserOutput {}
-
-.formattedUserOutput-li {}
-
 .error-message {
+    margin-top: 5px;
+    padding: 10px 3%;
     border: 0.5px solid red;
     border-radius: 5px;
     background-color: rgba(255, 0, 0, 0.151);

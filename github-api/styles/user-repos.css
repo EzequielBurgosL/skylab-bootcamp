@@ -1,0 +1,30 @@
+.list-header {
+    padding: 0;
+    padding-bottom: 5px; 
+    border-bottom: 2px solid black;
+    margin-bottom: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    font-style: bold;
+}
+
+li {
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-bottom: 1px solid lightgray;
+}
+
+.repo-name {
+    font-weight: 600;
+}
+
+.repo-info {
+    margin-left: auto;
+}
