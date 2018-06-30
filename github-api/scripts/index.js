@@ -6,12 +6,22 @@ const userForm = document.getElementById('user-form');
 // Listen for submit
 userForm.addEventListener('submit', userRetriever);
 
-
+/**
+ * 
+ * @description This function is triggered when we press the "Search" button and executes 2 functions from the logic layer.
+ * 
+ * @param {event} e - listened event when we submit the search. We capture it to prevent the default submit behaviour.
+ */
 function userRetriever(e) {
     e.preventDefault()
 
     const user = document.getElementById('user-input').value;
 
+    /**
+     * @description This function calls the logic and returns a formatted HTML with Github general user info
+     * 
+     * @param {user} user - the name introduced in the main input
+     */
     logic.retrieveUser(user)
         .then(response => {
 
@@ -41,7 +51,11 @@ function userRetriever(e) {
             document.getElementById('formatted-user').innerHTML = formattedUserOutput;
         });
 
-
+    /**
+     * @description This function calls the logic and returns a formatted HTML with user's repositories, stars and forks
+     * 
+     * @param {user} user - the name introduced in the main input
+     */
     logic.retrieveRepos(user)
         .then(response => {
 
